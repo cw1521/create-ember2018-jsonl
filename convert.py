@@ -19,7 +19,7 @@ def convert_label_str(file_dir, file_name, div):
             file_path = file_path.replace("-", "_")
             with jsonlines.open(file_path, "w") as writer:
                 writer.write_all(ds_list)
-            print(f"Wrote to disk: {new_file_name}")
+            print(f"Wrote to disk: {file_path}")
 
 
 if __name__ == "__main__":
